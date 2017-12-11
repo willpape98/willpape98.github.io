@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Here we are linking the css to the html -->
+    <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="UTF-8">
-    <title>P5.Js Exercise 5 - Interactive Color Grid</title>
+    <title>P5.js Final Work Will Pape</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
     <script src="sketch.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js" type="text/javascript"></script>
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+
+
+    <style>
+    /*Here we center the canvas horizontally by stating the width and letting the auto margins fill the rest of the space*/
+
+    body
+      {padding: 0; margin: 0;}
+
+    /* To center the canvas vertically we need specify the height and width and use absolute positioning*/
+  #canvascontainer{
+    margin: 0px auto;
+    width: 841px;
+    margin-top: 100px;
+  }
+    </style>
+
   </head>
-  <body>
-    <h1>This should be at the top</h1>
-    <div id="myContainer"></div>
-    <h2>This should be at the bottom</h2>
+
+
+<body>
+  <header>
+    <!-- here we make the text on the header boucne off the walls at a speed of 20-->
+    <marquee behavior="alternate" scrollamount="20">DAT405 - William Pape</marquee>
+    </header>
+    <div id="canvascontainer"></div>
+<footer>
+  Instructions - If you want to clear the canvas press "Left Click" on your mouse.
+</footer>
+
   </body>
-</html>
+
+  </html>
